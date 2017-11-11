@@ -49,7 +49,7 @@ extension UIColor {
 
 // MARK: - Hex Value Constants
 extension UIColor {
-    @nonobjc static var mainHexValue: UInt = 0x3CABDA
+    @nonobjc static var mainHexValue: UInt = 0x25799C
     @nonobjc static var secondaryHexValue: UInt = 0xFF8672
     @nonobjc static var teritaryHexValue: UInt = 0xFFFFFF
     @nonobjc static var buttonShadowHexValue: UInt = 0x4091CF
