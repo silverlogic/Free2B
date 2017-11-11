@@ -1,0 +1,38 @@
+//
+//  CircleView.swift
+//  Free2B
+//
+//  Created by Emanuel  Guerrero on 11/11/17.
+//  Copyright © 2017 SilverLogic, LLC. All rights reserved.
+//
+
+import UIKit
+
+/**
+    A subclass of `BaseView`. It makes
+    an instance a perfect cicle.
+*/
+@IBDesignable class CircleView: BaseView {
+    
+    // MARK: - Lifcycle
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        setup()
+    }
+    
+    override func draw(_ rect: CGRect) {
+        super.draw(rect)
+        setup()
+    }
+}
+
+
+// MARK: - Private Instance Methods
+fileprivate extension CircleView {
+    
+    /// Configures the view to be a circle.
+    fileprivate func setup() {
+        layer.cornerRadius = frame.size.width / 2
+        clipsToBounds = true
+    }
+}
