@@ -265,8 +265,8 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="4aq-9F-FYC"/>
                     </view>
-                    <navigationItem key="navigationItem" id="O5C-SV-sCz">
-                        <barButtonItem key="rightBarButtonItem" title="Item" image="hamburger" id="sW1-TZ-TAf">
+                    <navigationItem key="navigationItem" id="Ag4-iV-KXs" customClass="MainNavigationItem" customModule="Free2B" customModuleProvider="target">
+                        <barButtonItem key="rightBarButtonItem" image="hamburger" id="3pM-sF-500">
                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </barButtonItem>
                     </navigationItem>
@@ -281,20 +281,113 @@
             </objects>
             <point key="canvasLocation" x="1861.5999999999999" y="168.6656671664168"/>
         </scene>
-        <!--View Controller-->
+        <!--Search List View Controller-->
         <scene sceneID="i2d-jI-9we">
             <objects>
-                <viewController id="e1g-Uq-9Pk" sceneMemberID="viewController">
+                <viewController id="e1g-Uq-9Pk" customClass="SearchListViewController" customModule="Free2B" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="x1c-xX-beE">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tGu-SG-3Y2" customClass="BaseView" customModule="Free2B" customModuleProvider="target">
+                                <rect key="frame" x="16" y="78" width="343" height="36"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Aunt Peggy's Cupcakes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YqJ-ko-I5B">
+                                        <rect key="frame" x="8" y="8" width="190" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="190" id="hRl-E9-XMb"/>
+                                            <constraint firstAttribute="height" constant="21" id="u36-8z-48r"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="YqJ-ko-I5B" firstAttribute="top" secondItem="tGu-SG-3Y2" secondAttribute="top" constant="8" id="Kok-jr-Zx4"/>
+                                    <constraint firstAttribute="height" constant="36" id="adB-2w-gTv"/>
+                                    <constraint firstItem="YqJ-ko-I5B" firstAttribute="leading" secondItem="tGu-SG-3Y2" secondAttribute="leading" constant="8" id="dyU-Z2-aQB"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7uM-sy-LYT" customClass="BaseView" customModule="Free2B" customModuleProvider="target">
+                                <rect key="frame" x="16" y="130" width="343" height="343"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Aunt-Peggys-Cupcakes" translatesAutoresizingMaskIntoConstraints="NO" id="jDw-XT-AfB">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="343"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Boca Raton, FL" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cVi-jl-v83">
+                                        <rect key="frame" x="16" y="306" width="319" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="1oh-UJ-EG3"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Aunt Peggy's Cupcakes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u3C-5j-Kwa">
+                                        <rect key="frame" x="16" y="281" width="319" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="w9w-Vk-m0k"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="jDw-XT-AfB" secondAttribute="bottom" id="0P4-RO-tLo"/>
+                                    <constraint firstAttribute="trailing" secondItem="jDw-XT-AfB" secondAttribute="trailing" id="1RS-PR-5ru"/>
+                                    <constraint firstAttribute="trailing" secondItem="cVi-jl-v83" secondAttribute="trailing" constant="8" id="CqF-Ef-b93"/>
+                                    <constraint firstItem="jDw-XT-AfB" firstAttribute="top" secondItem="7uM-sy-LYT" secondAttribute="top" id="aJV-pB-f3J"/>
+                                    <constraint firstItem="cVi-jl-v83" firstAttribute="leading" secondItem="7uM-sy-LYT" secondAttribute="leading" constant="16" id="aXV-tA-nWT"/>
+                                    <constraint firstAttribute="height" constant="343" id="ckq-c8-pPU"/>
+                                    <constraint firstItem="u3C-5j-Kwa" firstAttribute="leading" secondItem="7uM-sy-LYT" secondAttribute="leading" constant="16" id="emF-ST-4X7"/>
+                                    <constraint firstItem="cVi-jl-v83" firstAttribute="top" secondItem="u3C-5j-Kwa" secondAttribute="bottom" constant="4" id="fr7-O1-GXy"/>
+                                    <constraint firstAttribute="bottom" secondItem="cVi-jl-v83" secondAttribute="bottom" constant="16" id="hy8-F7-mUF"/>
+                                    <constraint firstItem="jDw-XT-AfB" firstAttribute="leading" secondItem="7uM-sy-LYT" secondAttribute="leading" id="naA-e7-Ay5"/>
+                                    <constraint firstAttribute="trailing" secondItem="u3C-5j-Kwa" secondAttribute="trailing" constant="8" id="tey-gs-vZc"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="hasShadow" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="EDk-8j-Imv" firstAttribute="trailing" secondItem="tGu-SG-3Y2" secondAttribute="trailing" constant="16" id="1eD-LK-9R9"/>
+                            <constraint firstItem="tGu-SG-3Y2" firstAttribute="leading" secondItem="EDk-8j-Imv" secondAttribute="leading" constant="16" id="7fM-ie-LBP"/>
+                            <constraint firstItem="7uM-sy-LYT" firstAttribute="top" secondItem="tGu-SG-3Y2" secondAttribute="bottom" constant="16" id="FHl-Hr-tAQ"/>
+                            <constraint firstItem="EDk-8j-Imv" firstAttribute="trailing" secondItem="7uM-sy-LYT" secondAttribute="trailing" constant="16" id="akp-iL-sQl"/>
+                            <constraint firstItem="7uM-sy-LYT" firstAttribute="leading" secondItem="EDk-8j-Imv" secondAttribute="leading" constant="16" id="kpL-4h-aVY"/>
+                            <constraint firstItem="tGu-SG-3Y2" firstAttribute="top" secondItem="EDk-8j-Imv" secondAttribute="top" constant="14" id="tDP-wy-xfM"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="EDk-8j-Imv"/>
                     </view>
+                    <navigationItem key="navigationItem" id="9AN-B1-ahs" customClass="MainNavigationItem" customModule="Free2B" customModuleProvider="target">
+                        <barButtonItem key="rightBarButtonItem" image="hamburger" id="LKv-xj-NG4">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jrt-PL-TQ1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2646" y="169"/>
+            <point key="canvasLocation" x="2645.5999999999999" y="168.6656671664168"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Wdh-tG-vYU">
@@ -352,7 +445,7 @@
         <!--Companies-->
         <scene sceneID="9AJ-pv-3bn">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="of6-rW-mQd" customClass="BaseNavigationController" customModule="Free2B" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="of6-rW-mQd" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Companies" image="list-icon" id="Zj9-Jh-EuR"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="88J-X2-Gi5">
@@ -371,7 +464,7 @@
         <!--Search-->
         <scene sceneID="TdX-1T-YDM">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="bSz-rf-bcN" customClass="BaseNavigationController" customModule="Free2B" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="bSz-rf-bcN" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Search" image="search-icon" id="GaU-Wc-5cB"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="yXQ-He-vuZ">
@@ -390,7 +483,7 @@
         <!--Profile-->
         <scene sceneID="pwh-kl-p8s">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="uQs-fO-DPG" customClass="BaseNavigationController" customModule="Free2B" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="uQs-fO-DPG" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Profile" image="profile-icon" id="ceH-Oo-yfL"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="jbZ-CW-LQX">
@@ -408,6 +501,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Aunt-Peggys-Cupcakes" width="362" height="354"/>
         <image name="company1" width="116" height="116"/>
         <image name="hamburger" width="20" height="20"/>
         <image name="landingimage" width="402" height="231"/>

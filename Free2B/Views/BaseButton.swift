@@ -67,7 +67,7 @@ fileprivate extension BaseButton {
         backgroundColor = .clear
         layer.backgroundColor = UIColor.secondary.cgColor
         layer.shadowOffset = CGSize(width: 0.0, height: 2.0)
-        layer.shadowColor = UIColor.buttonShadow.cgColor
+        layer.shadowColor = UIColor.black.cgColor
         layer.shadowOpacity = 0.8
         layer.shadowRadius = 1.5
     }

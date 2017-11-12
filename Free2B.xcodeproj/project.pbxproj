@@ -11,6 +11,8 @@
 		881B48661FB7C0D7004A9298 /* ReviewedCompanyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 881B48651FB7C0D7004A9298 /* ReviewedCompanyCollectionViewCell.swift */; };
 		881B48681FB7C201004A9298 /* Company.swift in Sources */ = {isa = PBXBuildFile; fileRef = 881B48671FB7C201004A9298 /* Company.swift */; };
 		881B486A1FB7E933004A9298 /* BaseNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 881B48691FB7E933004A9298 /* BaseNavigationViewController.swift */; };
+		881B486C1FB7ED66004A9298 /* SearchListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 881B486B1FB7ED66004A9298 /* SearchListViewController.swift */; };
+		881B486E1FB7EE1A004A9298 /* MainNavigationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 881B486D1FB7EE1A004A9298 /* MainNavigationItem.swift */; };
 		88EB3A311FB770970047C990 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88EB3A301FB770970047C990 /* AppDelegate.swift */; };
 		88EB3A331FB770970047C990 /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88EB3A321FB770970047C990 /* HomeScreenViewController.swift */; };
 		88EB3A361FB770970047C990 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88EB3A341FB770970047C990 /* Main.storyboard */; };
@@ -28,6 +30,8 @@
 		881B48651FB7C0D7004A9298 /* ReviewedCompanyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewedCompanyCollectionViewCell.swift; sourceTree = "<group>"; };
 		881B48671FB7C201004A9298 /* Company.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Company.swift; sourceTree = "<group>"; };
 		881B48691FB7E933004A9298 /* BaseNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationViewController.swift; sourceTree = "<group>"; };
+		881B486B1FB7ED66004A9298 /* SearchListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchListViewController.swift; sourceTree = "<group>"; };
+		881B486D1FB7EE1A004A9298 /* MainNavigationItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigationItem.swift; sourceTree = "<group>"; };
 		88EB3A2D1FB770970047C990 /* Free2B.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Free2B.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		88EB3A301FB770970047C990 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		88EB3A321FB770970047C990 /* HomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenViewController.swift; sourceTree = "<group>"; };
@@ -112,6 +116,7 @@
 				88EB3A4C1FB7929A0047C990 /* CircleView.swift */,
 				88EB3A4E1FB7937D0047C990 /* BaseButton.swift */,
 				881B48651FB7C0D7004A9298 /* ReviewedCompanyCollectionViewCell.swift */,
+				881B486D1FB7EE1A004A9298 /* MainNavigationItem.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -121,6 +126,7 @@
 			children = (
 				88EB3A321FB770970047C990 /* HomeScreenViewController.swift */,
 				881B48691FB7E933004A9298 /* BaseNavigationViewController.swift */,
+				881B486B1FB7ED66004A9298 /* SearchListViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -290,12 +296,14 @@
 			files = (
 				88EB3A491FB7924A0047C990 /* BaseView.swift in Sources */,
 				88EB3A4D1FB7929A0047C990 /* CircleView.swift in Sources */,
+				881B486C1FB7ED66004A9298 /* SearchListViewController.swift in Sources */,
 				88EB3A331FB770970047C990 /* HomeScreenViewController.swift in Sources */,
 				88EB3A311FB770970047C990 /* AppDelegate.swift in Sources */,
 				88EB3A4F1FB7937D0047C990 /* BaseButton.swift in Sources */,
 				881B48661FB7C0D7004A9298 /* ReviewedCompanyCollectionViewCell.swift in Sources */,
 				881B486A1FB7E933004A9298 /* BaseNavigationViewController.swift in Sources */,
 				88EB3A4B1FB792810047C990 /* UIColor+Extension.swift in Sources */,
+				881B486E1FB7EE1A004A9298 /* MainNavigationItem.swift in Sources */,
 				881B48681FB7C201004A9298 /* Company.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

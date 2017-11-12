@@ -17,6 +17,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UINavigationBar.appearance().barTintColor = .main
         let rootController = window?.rootViewController as! UITabBarController
         rootController.selectedIndex = 1
+        let navtitleTextAttributes: [NSAttributedStringKey: Any] = [.foregroundColor: UIColor.white]
+        UINavigationBar.appearance().titleTextAttributes = navtitleTextAttributes
+        UIBarButtonItem.appearance().setTitleTextAttributes(navtitleTextAttributes, for: .normal)
         return true
     }
 }

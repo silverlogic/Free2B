@@ -63,6 +63,6 @@ private extension HomeScreenViewController {
     }
     
     @objc func handleTapGestture(gesture: UITapGestureRecognizer) {
-        
+        performSegue(withIdentifier: "goToListSegue", sender: nil)
     }
 }
