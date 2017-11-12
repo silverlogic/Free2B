@@ -15,7 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         UINavigationBar.appearance().barTintColor = .main
-        let rootController = window?.rootViewController as! UITabBarController
+        let rootController = window?.rootViewController as! MainTabBarViewController
         rootController.selectedIndex = 1
         let navtitleTextAttributes: [NSAttributedStringKey: Any] = [.foregroundColor: UIColor.white]
         UINavigationBar.appearance().titleTextAttributes = navtitleTextAttributes

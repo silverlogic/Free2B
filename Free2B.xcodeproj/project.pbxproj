@@ -17,6 +17,7 @@
 		8823C5E31FB8ADC600916206 /* CompanyProTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8823C5E21FB8ADC600916206 /* CompanyProTableViewCell.swift */; };
 		8823C5E51FB8B09600916206 /* CompanyDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8823C5E41FB8B09600916206 /* CompanyDetailsViewController.swift */; };
 		882CD76C1FB8BEA800534C73 /* Rectangle.png in Resources */ = {isa = PBXBuildFile; fileRef = 882CD76B1FB8BEA800534C73 /* Rectangle.png */; };
+		882CD7721FB8C6C000534C73 /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882CD7711FB8C6C000534C73 /* MainTabBarViewController.swift */; };
 		88EB3A311FB770970047C990 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88EB3A301FB770970047C990 /* AppDelegate.swift */; };
 		88EB3A331FB770970047C990 /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88EB3A321FB770970047C990 /* HomeScreenViewController.swift */; };
 		88EB3A361FB770970047C990 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88EB3A341FB770970047C990 /* Main.storyboard */; };
@@ -40,6 +41,7 @@
 		8823C5E21FB8ADC600916206 /* CompanyProTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyProTableViewCell.swift; sourceTree = "<group>"; };
 		8823C5E41FB8B09600916206 /* CompanyDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyDetailsViewController.swift; sourceTree = "<group>"; };
 		882CD76B1FB8BEA800534C73 /* Rectangle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Rectangle.png; sourceTree = "<group>"; };
+		882CD7711FB8C6C000534C73 /* MainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
 		88EB3A2D1FB770970047C990 /* Free2B.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Free2B.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		88EB3A301FB770970047C990 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		88EB3A321FB770970047C990 /* HomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenViewController.swift; sourceTree = "<group>"; };
@@ -139,6 +141,7 @@
 				881B48691FB7E933004A9298 /* BaseNavigationViewController.swift */,
 				881B486B1FB7ED66004A9298 /* SearchListViewController.swift */,
 				8823C5E41FB8B09600916206 /* CompanyDetailsViewController.swift */,
+				882CD7711FB8C6C000534C73 /* MainTabBarViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -272,13 +275,13 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Free2B/Pods-Free2B-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
-				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/RevealingSplashView/RevealingSplashView.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RevealingSplashView.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -307,6 +310,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				882CD7721FB8C6C000534C73 /* MainTabBarViewController.swift in Sources */,
 				8823C5E11FB8AD6A00916206 /* CredibilityTableViewCell.swift in Sources */,
 				88EB3A491FB7924A0047C990 /* BaseView.swift in Sources */,
 				88EB3A4D1FB7929A0047C990 /* CircleView.swift in Sources */,

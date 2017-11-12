@@ -1,16 +1,15 @@
 PODS:
-  - RxCocoa (3.6.1):
-    - RxSwift (~> 3.6)
-  - RxSwift (3.6.1)
+  - Kingfisher (4.1.1)
+  - RevealingSplashView (0.4.0)
 
 DEPENDENCIES:
-  - RxCocoa
-  - RxSwift
+  - Kingfisher
+  - RevealingSplashView
 
 SPEC CHECKSUMS:
-  RxCocoa: 84a08739ab186248c7f31ce4ee92d6f8a947d690
-  RxSwift: f9de85ea20cd2f7716ee5409fc13523dc638e4e4
+  Kingfisher: 6793a473357b5dbee42b0068ef203fe8325f259e
+  RevealingSplashView: 72be158ad5e1bc72713e8f78383dc3e1803ce4d1
 
-PODFILE CHECKSUM: 641cde4d0973d73e0d7646b3dec3d76baa5dc21d
+PODFILE CHECKSUM: 25284e2b95a61466ee312c916d64b812e007478f
 
 COCOAPODS: 1.3.1

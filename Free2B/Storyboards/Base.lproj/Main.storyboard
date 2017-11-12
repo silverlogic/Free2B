@@ -867,10 +867,10 @@
             </objects>
             <point key="canvasLocation" x="1863" y="-496"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Main Tab Bar View Controller-->
         <scene sceneID="th5-Z8-oFC">
             <objects>
-                <tabBarController id="Rpk-gd-07C" sceneMemberID="viewController">
+                <tabBarController id="Rpk-gd-07C" customClass="MainTabBarViewController" customModule="Free2B" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="cve-NE-R3o">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>

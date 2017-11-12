@@ -7,8 +7,8 @@ target 'Free2B' do
   use_frameworks!
 
   # Pods for Free2B
-  pod 'RxSwift'
-  pod 'RxCocoa'
+  pod 'RevealingSplashView'
+  pod 'Kingfisher'
 end
 
 post_install do |installer|
